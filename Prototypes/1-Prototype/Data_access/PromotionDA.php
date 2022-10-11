@@ -2,25 +2,12 @@
 
 
 include 'promotion.php';
-class GestionPromotion{
-
-    private $Connection = Null;
-
-    private function getConnection(){
-      
-            $this->Connection = mysqli_connect('localhost', 'root', '', 'gestion_promotion');
-           
-         
-       
-        
-        return $this->Connection;
-        
-    }
-   
+include 'connection.php';
+class PromotionDA{
 
      public function Afficher(){
          $selectRow = 'SELECT * FROM promotion';
-         $query = mysqli_query($this->getConnection() ,$selectRow);
+         $query = mysqli_query(getConnection() ,$selectRow);
          $promotion_data = mysqli_fetch_all($query, MYSQLI_ASSOC);
 
          $TableData = array();
@@ -40,7 +27,7 @@ class GestionPromotion{
         //requet sql
      $insertRow = "INSERT INTO promotion(name_promotion)
                    VALUES('$nom')";
-     mysqli_query($this->getConnection(), $insertRow);
+     mysqli_query(getConnection(), $insertRow);
      }
 }
 ?>

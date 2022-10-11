@@ -1,6 +1,6 @@
 <?php
-include 'GestionPromotion.php';
- $gestionPromotions = new GestionPromotion();
+  include ("Business/PromotionBLL.php");
+ $gestionPromotions = new PromotionDA();
 
 
  if (!empty($_POST)){

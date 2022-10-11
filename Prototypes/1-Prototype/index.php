@@ -1,8 +1,8 @@
 <?php
 
 
- include 'GestionPromotion.php';
- $gestionPromotion = new GestionPromotion;
+include ("Business/PromotionBLL.php");
+ $gestionPromotion = new PromotionDA;
  $data = $gestionPromotion->Afficher();
  
 
