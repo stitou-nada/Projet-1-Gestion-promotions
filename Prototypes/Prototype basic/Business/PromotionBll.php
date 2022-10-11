@@ -2,10 +2,9 @@
 include("Data_access/PromotionDA.php");
 
 class PromotionBLL{
-
-    private $promotionDA= null;
+    
     public function __construct(){
-        $this->PromotionDA = new PromotionDA();
+        $PromotionDA = new PromotionDA();
    
       
     } 
