@@ -6,13 +6,13 @@ class Promotion{
 
 
       public function getId(){
-        return $this->$Id;
+        return $this->Id;
       }
       public function setId($id){
         $this->Id = $id;
       }
       public function getNom(){
-        return $this->$Nom;
+        return $this->Nom;
       }
       public function setNom($nom){
         $this->Nom = $nom;
@@ -21,3 +21,4 @@ class Promotion{
 } 
 
 ?>
+   
