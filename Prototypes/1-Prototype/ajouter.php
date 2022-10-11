@@ -1,16 +1,15 @@
 <?php
 include 'GestionPromotion.php';
- $gestionPromotion = new GestionPromotion();
+ $gestionPromotions = new GestionPromotion();
 
 
  if (!empty($_POST)){
     $promotion = new Promotion();
-    $promotion->setId($_POST['Id']);
     $promotion->setNom($_POST['name_promotion']);
-    $gestionPromotion->Ajouter($promotion);
+    $gestionPromotions->Ajouter($promotion);
 
     // Redirection vers la page index.php
-    header("Location : index.php");
+    header("Location: index.php");
 
  }
 

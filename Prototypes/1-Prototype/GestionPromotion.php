@@ -33,12 +33,13 @@ class GestionPromotion{
           return $TableData;
 
      } 
-     
+
      public function Ajouter($promotion)  {
         $nom = $promotion->getNom();
 
         //requet sql
-     $insertRow = "INSERT INTO promotion(name_promotion)VALUE('$nom')";
+     $insertRow = "INSERT INTO promotion(name_promotion)
+                   VALUES('$nom')";
      mysqli_query($this->getConnection(), $insertRow);
      }
 }
