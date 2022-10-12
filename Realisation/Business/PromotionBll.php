@@ -13,7 +13,7 @@ class PromotionBLL{
     public function AfficherPromotions(){
         return $this->PromotionDA->Afficher();
     }
-    public function AjouterPromotions(){
+    public function AjouterPromotions($promotion){
         return $this->PromotionDA->Ajouter($promotion);
     }
     public function EditPromotions($id){

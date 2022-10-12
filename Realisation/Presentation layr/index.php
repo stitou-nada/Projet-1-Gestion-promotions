@@ -7,8 +7,13 @@ include ("../Business/PromotionBLL.php");
  
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</head>
+<body>
 
 <section class="vh-100" style="background-color: #eee;">
     <div class="container py-5 h-100">
@@ -18,7 +23,7 @@ include ("../Business/PromotionBLL.php");
             <div class="card-body p-4">
   
               <h4 class="text-center my-3 pb-3">GESTION PROMOTION</h4>
-              <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
+              <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" method="POST">
                   <div class="col-12">
                    
                      <a href="ajouter.php"class="btn btn-primary" style="color:white">Ajouter Promotion </a>
@@ -45,7 +50,7 @@ include ("../Business/PromotionBLL.php");
                        foreach($data as $value){
                      ?>
                   <tr>
-                    <th scope="row"><?= $value->getId() ?></th>
+                    <td scope="row"><?= $value->getId() ?></td>
                     <td><?= $value->getNom() ?></td>
                     
                     <td>
@@ -64,4 +69,7 @@ include ("../Business/PromotionBLL.php");
       </div>
     </div>
   </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   
+  </body>
+</html>
