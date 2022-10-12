@@ -1,5 +1,5 @@
 <?php
-  include ("Business/PromotionBLL.php");
+  include ("../Business/PromotionBLL.php");
  $gestionPromotions = new PromotionDA();
 
 
