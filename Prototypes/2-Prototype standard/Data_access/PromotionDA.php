@@ -47,8 +47,7 @@ class PromotionDA{
     } 
 
     public function Modifier($id,$nom){
-      $RowUpdate = "UPDATE promotion SET
-      name_promotion='$nom' WHERE id=$id ";
+      $RowUpdate = "UPDATE promotion SET name_promotion='$nom' WHERE id=$id ";
       mysqli_query(getConnection(),$RowUpdate);
     }
 

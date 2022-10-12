@@ -19,6 +19,7 @@ include ("Business/PromotionBLL.php");
 <body>
     <div>
    <a href="ajouter.php"> Ajouter une promotion</a>
+   
     <table >
      <tr>
         <th>Id</th>
