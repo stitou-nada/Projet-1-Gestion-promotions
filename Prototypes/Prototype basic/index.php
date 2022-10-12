@@ -2,8 +2,8 @@
 
 
 include ("Business/PromotionBLL.php");
- $gestionPromotion = new PromotionDA;
- $data = $gestionPromotion->Afficher();
+ $promotionBLL = new PromotionBLL();
+ $data = $promotionBLL->AfficherPromotions();
  
 
 ?>

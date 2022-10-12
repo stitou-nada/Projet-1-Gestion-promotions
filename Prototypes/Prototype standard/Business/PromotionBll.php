@@ -11,10 +11,18 @@ class PromotionBLL{
     } 
 
     public function AfficherPromotions(){
-        return $this->promotionDA->Afficher();
+        return $this->PromotionDA->Afficher();
     }
     public function AjouterPromotions(){
-        return $this->promotionDA->Ajouter($promotion);
+        return $this->PromotionDA->Ajouter($promotion);
     }
+    public function EditPromotions($id){
+        return $this->PromotionDA->Edit($id);
+    }
+    public function ModifierPromotions($id,$nom){
+        return $this->PromotionDA->Modifier($id,$nom);
+    }
+    
+ 
 }
 ?>

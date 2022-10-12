@@ -1,12 +1,12 @@
 <?php
   include ("Business/PromotionBLL.php");
- $gestionPromotions = new PromotionDA();
+ $PromotionsBLL = new PromotionBLL();
 
 
  if (!empty($_POST)){
     $promotion = new Promotion();
     $promotion->setNom($_POST['name_promotion']);
-    $gestionPromotions->Ajouter($promotion);
+    $PromotionsBLL->AjouterPromotions($promotion);
 
     // Redirection vers la page index.php
     header("Location: index.php");
