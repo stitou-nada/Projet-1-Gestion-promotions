@@ -31,7 +31,7 @@ include ("../Business/PromotionBLL.php");
                   </div>
                 <div class="col-12">
                   <div class="form-outline">
-                    <input type="text" id="form1" class="form-control" placeholder="Recherche" />
+                    <input type="text" id="live_search" class="form-control" placeholder="Recherche" />
                   </div>
                 </div>
               </form>

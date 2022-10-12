@@ -32,7 +32,7 @@
           <div class="card rounded-3">
             <div class="card-body p-4">
   
-              <h4 class="text-center my-3 pb-3">AJOUTER PROMOTION</h4>
+              <h4 class="text-center my-3 pb-3">MODIFIER PROMOTION</h4>
               <form class="row row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2" method="POST">
                  
                 <div class="col-12">

@@ -18,8 +18,8 @@ if(isset($_POST['input'])){
                 <td><?php echo $id;?></td>
                 <td><?php echo $nom;?></td>
                 <td>
-                    <a href="modifier.php?id=<?php echo $id?>">Modifier</a>
-                    <a href="supprimer.php?id=<?php echo $id ?>">Supprime</a>
+                    <a href="modifier.php?id=<?php echo $id?>" class="btn btn-success ms-1">Modifier</a>
+                    <a href="supprimer.php?id=<?php echo $id ?>"class="btn btn-danger">Supprime</a>
          </td>
             </tr>
             <?php

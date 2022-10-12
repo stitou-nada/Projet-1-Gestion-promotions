@@ -6,7 +6,7 @@
  if (!empty($_POST)){
     $promotion = new Promotion();
     $promotion->setNom($_POST['name_promotion']);
-    $PromotionsBLL->AfficherPromotions($promotion);
+    $PromotionsBLL->AjouterPromotions($promotion);
 
     // Redirection vers la page index.php
     header("Location: index.php");
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-12">
                  
-                  <button class="btn btn-primary" style="color:white">Ajouter </button>
+                  <button type="submit"class="btn btn-primary" style="color:white">Ajouter </button>
                
                </div>
                 
@@ -53,4 +53,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   </body>
 </html>
-  
+ 
