@@ -1,5 +1,5 @@
 <?php
-include("Data_access/PromotionDA.php");
+include("../Data_access/PromotionDA.php");
 
 class PromotionBLL{
     
@@ -15,7 +15,7 @@ class PromotionBLL{
     public function AfficherPromotions(){
         return $this->promotionDA->Afficher();
     }
-    public function AjouterPromotions(){
+    public function AjouterPromotions($promotion){
         return $this->promotionDA->Ajouter($promotion);
     }
 }
