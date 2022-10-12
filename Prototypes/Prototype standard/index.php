@@ -32,7 +32,7 @@ include ("Business/PromotionBLL.php");
          <td><?= $value->getNom() ?></td>
          <td>
                     <a href="modifier.php?id=<?php echo $value->getId() ?>">Modifier</a>
-                    <a href="Delete.php?id=<?php echo $value->getId() ?>">Supprime</a>
+                    <a href="supprimer.php?id=<?php echo $value->getId() ?>">Supprime</a>
          </td>
       </tr>
      

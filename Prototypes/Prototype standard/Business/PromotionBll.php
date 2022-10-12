@@ -22,6 +22,9 @@ class PromotionBLL{
     public function ModifierPromotions($id,$nom){
         return $this->PromotionDA->Modifier($id,$nom);
     }
+    public function SupprimePromotions($id){
+        return $this->PromotionDA->Supprimer($id);
+    }
     
  
 }

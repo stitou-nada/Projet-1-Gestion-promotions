@@ -51,5 +51,10 @@ class PromotionDA{
       name_promotion='$nom' WHERE id=$id ";
       mysqli_query(getConnection(),$RowUpdate);
     }
+
+    public function Supprimer($id){
+      $RowDelet = "DELETE FROM promotion WHERE id = $id";
+      mysqli_query(getConnection(), $RowDelet);
+    }
 }
 ?>
