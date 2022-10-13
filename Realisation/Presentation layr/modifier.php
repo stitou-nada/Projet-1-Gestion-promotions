@@ -38,7 +38,7 @@
                 <div class="col-12">
                   <div class="form-outline">
                   <input type="hidden" value=<?php echo $afficherValue->getId()?> name="Id" >    
-                    <input type="text"value=<?php echo $afficherValue->getNom()?> class="form-control" name="name_promotion" placeholder="Insere promotion" />
+                    <input type="text"value="<?php echo $afficherValue->getNom()?>" class="form-control" name="name_promotion" placeholder="Insere promotion" />
                   </div>
                 </div>
                 <div class="col-12">
