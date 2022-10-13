@@ -6,7 +6,7 @@ type="text/javascript">
                      // alert(input);
                      if(input!= " " ){
                         $.ajax({
-                           url:"livesearch.php",
+                           url:"../Data-access-layr/livesearch.php",
                            method:"POST",
                            data:{input:input},
 

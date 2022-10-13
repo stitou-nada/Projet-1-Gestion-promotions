@@ -1,5 +1,5 @@
 <?php
-include ('../Data_access/connection.php');
+include ('connection.php');
 if(isset($_POST['input'])){
     $input = $_POST['input'];
     $query = "SELECT * FROM promotion WHERE name_promotion LIKE '{$input}%'";

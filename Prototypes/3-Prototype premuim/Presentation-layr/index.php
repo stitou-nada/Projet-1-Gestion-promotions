@@ -1,7 +1,7 @@
 <?php
 
 
-include ("../Business/PromotionBLL.php");
+include ("../Business-layr/PromotionBLL.php");
  $PromotionBLL = new PromotionBLL;
  $data = $PromotionBLL->AfficherPromotions();
  
@@ -52,7 +52,7 @@ include ("../Business/PromotionBLL.php");
     </div>
     <div id=""></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="search.js"></script>
+    <script src="../assest/js/search.js"></script>
     
 </body>
 </html>
