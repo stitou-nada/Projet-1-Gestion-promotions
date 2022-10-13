@@ -17,7 +17,7 @@ if(isset($_POST['input'])){
                  <tr>
                 <td><?php echo $id;?></td>
                 <td><?php echo $nom;?></td>
-                <td>
+                <td style="width: 216px;" >
                     <a href="modifier.php?id=<?php echo $id?>" class="btn btn-success ms-1">Modifier</a>
                     <a href="supprimer.php?id=<?php echo $id ?>"class="btn btn-danger">Supprime</a>
          </td>

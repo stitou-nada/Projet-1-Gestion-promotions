@@ -5,7 +5,7 @@
 
  if (!empty($_POST)){
     $promotion = new Promotion();
-    $promotion->setNom($_POST['name_promotion']);
+    $promotion->setNom($_POST['nameInput']);
     $PromotionsBLL->AjouterPromotions($promotion);
 
     // Redirection vers la page index.php
@@ -34,7 +34,7 @@
                </div>
                 <div class="col-12">
                   <div class="form-outline">
-                   <input type="text" class="form-control" name="name_promotion" placeholder="Insere " />
+                   <input type="text" class="form-control" name="nameInput" placeholder="Insere " />
                   </div>
                 </div>
                 <div class="col-12">

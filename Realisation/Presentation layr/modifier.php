@@ -9,8 +9,8 @@
  }
 
  if (!empty($_POST)){
-    $id=$_POST['Id'];
-    $nom=$_POST['name_promotion'];
+    $id=$_POST['Id_input'];
+    $nom=$_POST['nameInput'];
     $promotionBLL->ModifierPromotions($id,$nom);
 
     // Redirection vers la page index.php
@@ -37,8 +37,8 @@
                  
                 <div class="col-12">
                   <div class="form-outline">
-                  <input type="hidden" value=<?php echo $afficherValue->getId()?> name="Id" >    
-                    <input type="text"value="<?php echo $afficherValue->getNom()?>" class="form-control" name="name_promotion" placeholder="Insere promotion" />
+                  <input type="hidden" value=<?php echo $afficherValue->getId()?> name="Id_input" >    
+                    <input type="text"value="<?php echo $afficherValue->getNom()?>" class="form-control" name="nameInput" placeholder="Insere promotion" />
                   </div>
                 </div>
                 <div class="col-12">

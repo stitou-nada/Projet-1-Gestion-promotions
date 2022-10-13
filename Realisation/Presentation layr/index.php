@@ -29,7 +29,8 @@ include ("../Business/PromotionBLL.php");
                      <a href="ajouter.php"class="btn btn-primary" style="color:white">Ajouter Promotion </a>
                   
                   </div>
-                <div class="col-12">
+                <!-- recherche -->
+                  <div class="col-12">
                   <div class="form-outline">
                     <input type="text" id="live_search" class="form-control" placeholder="Recherche" />
                   </div>
@@ -41,7 +42,7 @@ include ("../Business/PromotionBLL.php");
                   <tr>
                     <th scope="col">Id</th>
                     <th scope="col">Nom Promotion</th>
-                    <th scope="col">Actions</th>
+                    <th scope="col"> <center> Actions</center></th>
                   </tr>
                   
                 </thead>
@@ -53,7 +54,7 @@ include ("../Business/PromotionBLL.php");
                     <td scope="row"><?= $value->getId() ?></td>
                     <td><?= $value->getNom() ?></td>
                     
-                    <td>
+                    <td    style="width: 216px;"  >
                       <a href="modifier.php?id=<?php echo $value->getId() ?>" class="btn btn-success ms-1">Modifier</a>
                     <a href="supprimer.php?id=<?php echo $value->getId() ?>"class="btn btn-danger">Supprime</a>
                     </td>
@@ -62,7 +63,7 @@ include ("../Business/PromotionBLL.php");
                 </tbody>
               </table>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-              <script src="search.js"></script>
+              <script src="../assest/js/search.js"></script>
             </div>
           </div>
         </div>
