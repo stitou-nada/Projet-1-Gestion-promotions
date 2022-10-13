@@ -4,7 +4,7 @@ $(document).ready(function () {
       // alert(input);
       if (input != " ") {
          $.ajax({
-            url: "../Data_access/livesearch.php",
+            url: "../Data_access_layer/livesearch.php",
             method: "POST",
             data: {input: input },
            

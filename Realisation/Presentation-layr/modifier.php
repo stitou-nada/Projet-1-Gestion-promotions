@@ -1,5 +1,5 @@
 <?php
-  include ("../Business/PromotionBLL.php");
+  include ("../Business_layer/PromotionBLL.php");
 
 
  if(isset($_GET['id'])){

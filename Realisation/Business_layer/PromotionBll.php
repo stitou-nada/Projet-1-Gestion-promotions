@@ -1,5 +1,5 @@
 <?php
-include("../Data_access/PromotionDA.php");
+include("../Data_access_layer/PromotionDA.php");
 
 class PromotionBLL{
 

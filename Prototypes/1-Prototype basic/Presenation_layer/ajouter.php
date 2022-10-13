@@ -1,5 +1,5 @@
 <?php
-  include ("../Business-layr/PromotionBLL.php");
+  include ("../Business_layer/PromotionBLL.php");
  $PromotionsBLL = new PromotionBLL();
 
 

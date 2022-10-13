@@ -1,7 +1,7 @@
 <?php
 
 
-include ("../Business-layr/PromotionBLL.php");
+include ("../Business_layer/PromotionBLL.php");
  $promotionBLL = new PromotionBLL();
  $data = $promotionBLL->AfficherPromotions();
  
