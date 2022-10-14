@@ -34,7 +34,7 @@
                </div>
                 <div class="col-12">
                   <div class="form-outline">
-                   <input type="text" class="form-control" name="nameInput" placeholder="Insere " />
+                   <input type="text" class="form-control" pattern="[a-zA-Z0-9]+" required name="nameInput" placeholder="Insere " />
                   </div>
                 </div>
                 <div class="col-12">
