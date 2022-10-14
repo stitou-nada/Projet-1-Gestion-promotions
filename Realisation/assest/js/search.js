@@ -6,7 +6,7 @@ $(document).ready(function () {
          $.ajax({
             url: "../Data_access_layer/livesearch.php",
             method: "POST",
-            data: {input: input },
+            data: {key: input },
            
             
             success: function (data) {

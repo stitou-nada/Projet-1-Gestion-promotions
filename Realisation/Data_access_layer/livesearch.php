@@ -1,7 +1,7 @@
 <?php
 include ('connection.php');
-if(isset($_POST['input'])){
-    $input = $_POST['input'];
+if(isset($_POST['key'])){
+    $input = $_POST['key'];
     $query = "SELECT * FROM promotion WHERE name_promotion LIKE '{$input}%'";
     $result = mysqli_query(getConnection() ,$query);
     if(mysqli_num_rows($result)>0){?>
